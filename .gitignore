@@ -1,0 +1,8 @@
+# Dependencies (none - this is a zero-dependency static site)
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.vercel

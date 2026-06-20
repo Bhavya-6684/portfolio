@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Software Engineer, AI Developer, and Startup Founder building intelligent digital experiences that shape the future.">
+  <meta name="keywords" content="software engineer, AI developer, startup founder, full stack, machine learning, portfolio">
+  <meta name="author" content="Bhavya">
+  <meta property="og:title" content="Bhavya — AI Developer & Startup Founder">
+  <meta property="og:description" content="Building Intelligent Digital Experiences That Shape The Future.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0A">
+  <title>Bhavya — AI Developer | Full Stack Engineer | Startup Founder</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     CUSTOM CURSOR
+═══════════════════════════════════════════ -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════
+     LOADING SCREEN
+═══════════════════════════════════════════ -->
+<div id="loader" role="status" aria-label="Loading">
+  <div class="loader-logo">B.</div>
+  <div class="loader-bar-track">
+    <div class="loader-bar-fill"></div>
+  </div>
+  <div class="loader-text">Initializing Experience</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Home">
+      <span class="nav-logo-dot" aria-hidden="true"></span>
+      Bhavya
+    </a>
+
+    <div class="nav-links" role="menubar">
+      <a href="#about"      class="nav-link" role="menuitem">About</a>
+      <a href="#skills"     class="nav-link" role="menuitem">Skills</a>
+      <a href="#projects"   class="nav-link" role="menuitem">Projects</a>
+      <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+      <a href="#blog"       class="nav-link" role="menuitem">Blog</a>
+      <a href="#contact"    class="nav-link nav-cta" role="menuitem">Hire Me</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <a href="#about"      class="nav-link">About</a>
+  <a href="#skills"     class="nav-link">Skills</a>
+  <a href="#projects"   class="nav-link">Projects</a>
+  <a href="#experience" class="nav-link">Experience</a>
+  <a href="#blog"       class="nav-link">Blog</a>
+  <a href="#contact"    class="nav-link">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════ -->
+<section id="hero" aria-labelledby="hero-headline">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- Gradient Orbs -->
+  <div class="hero-gradient-orb orb-1" aria-hidden="true"></div>
+  <div class="hero-gradient-orb orb-2" aria-hidden="true"></div>
+  <div class="hero-gradient-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Floating Shapes -->
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="geo-shape geo-1"></div>
+    <div class="geo-shape geo-2"></div>
+    <div class="geo-shape geo-3"></div>
+    <div class="geo-shape geo-4"></div>
+    <div class="geo-shape geo-5"></div>
+  </div>
+
+  <div class="container hero-content">
+    <!-- Text Side -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-headline" id="hero-headline">
+        Building <span class="gradient-text">Intelligent</span><br>
+        Digital Experiences<br>
+        That Shape The <span class="gradient-text">Future</span>
+      </h1>
+
+      <p class="hero-subheadline">
+        <span>AI Developer</span>
+        <span class="separator" aria-hidden="true">|</span>
+        <span>Full Stack Engineer</span>
+        <span class="separator" aria-hidden="true">|</span>
+        <span>Startup Founder</span>
+      </p>
+
+      <div class="hero-typewriter" aria-live="polite">
+        <span id="typewriter-text" aria-label="Role description"></span>
+        <span class="cursor" aria-hidden="true"></span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" id="btn-view-work">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          View My Work
+        </a>
+        <a href="assets/resume.pdf" class="btn btn-secondary" id="btn-resume" download aria-label="Download resume">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btn-connect">
+          Let's Connect ✦
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="stat-item reveal stagger-1">
+          <div class="stat-number" data-counter data-target="15" data-suffix="+">0+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item reveal stagger-2">
+          <div class="stat-number" data-counter data-target="8" data-suffix="+">0+</div>
+          <div class="stat-label">Hackathons</div>
+        </div>
+        <div class="stat-item reveal stagger-3">
+          <div class="stat-number" data-counter data-target="5000" data-suffix="+">0+</div>
+          <div class="stat-label">Users Impacted</div>
+        </div>
+        <div class="stat-item reveal stagger-4">
+          <div class="stat-number" data-counter data-target="25" data-suffix="+">0+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar Side -->
+    <div class="hero-avatar-wrap">
+      <div class="hero-avatar">
+        <img src="assets/images/hero_portrait.png" alt="Bhavya — Software Engineer & AI Developer" loading="eager">
+        <div class="avatar-glow-ring" aria-hidden="true"></div>
+      </div>
+      <div class="avatar-badge">
+        <span class="status-dot" aria-hidden="true"></span>
+        Open to Opportunities
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Hint -->
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT SECTION
+═══════════════════════════════════════════ -->
+<section id="about" class="section-padding" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Image Side -->
+      <div class="about-image-wrap reveal from-left">
+        <div class="about-image">
+          <img src="assets/images/about_workspace.png" alt="Developer workspace setup" loading="lazy">
+        </div>
+        <div class="about-stats-float">
+          <div class="about-stat-card">
+            <div class="num">2+</div>
+            <div class="lbl">Years Coding</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">Top 50</div>
+            <div class="lbl">Hackathon Rank</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">3+</div>
+            <div class="lbl">Startups Built</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">∞</div>
+            <div class="lbl">Curiosity</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Side -->
+      <div class="about-text reveal from-right">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title" id="about-title">
+          The Mind Behind<br>
+          <span class="gradient-text">The Code</span>
+        </h2>
+
+        <p>
+          I'm <strong style="color:#fff">Bhavya</strong> — a passionate Software Engineer, AI Developer, and Startup Founder
+          driven by an obsession with building technology that matters. I thrive at the intersection of
+          beautiful design and powerful engineering.
+        </p>
+        <p>
+          From building <strong style="color:#60A5FA">Aarogya Darpan</strong> — a full healthcare ecosystem — to
+          developing Computer Vision systems with real-world impact, I bring the energy of a founder
+          and the precision of an engineer to every project I touch.
+        </p>
+        <p>
+          When I'm not shipping code, I'm mentoring at makerspaces, competing in hackathons,
+          or exploring the bleeding edge of AI. I believe the best products are born from deep
+          empathy, relentless iteration, and a healthy disregard for "impossible."
+        </p>
+
+        <div class="about-tags">
+          <span class="about-tag">🧠 AI/ML</span>
+          <span class="about-tag">⚡ Full Stack</span>
+          <span class="about-tag">🚀 Startup Mindset</span>
+          <span class="about-tag">🎯 Problem Solver</span>
+          <span class="about-tag">🌐 Open Source</span>
+          <span class="about-tag">👁️ Computer Vision</span>
+          <span class="about-tag">🔧 IoT</span>
+          <span class="about-tag">📊 Data Science</span>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <h3 class="timeline-title">My Journey</h3>
+          <div class="timeline-track">
+            <div class="timeline-item reveal stagger-1">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-role">First Line of Code</div>
+              <div class="timeline-org">Self-taught Python & Web Development</div>
+            </div>
+            <div class="timeline-item reveal stagger-2">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-role">Computer Science Student</div>
+              <div class="timeline-org">Engineering College — CSE Department</div>
+            </div>
+            <div class="timeline-item reveal stagger-3">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-role">Hackathon Competitor & Startup Founder</div>
+              <div class="timeline-org">Top 50 / 751 teams · Launched Aarogya Darpan</div>
+            </div>
+            <div class="timeline-item reveal stagger-4">
+              <div class="timeline-year">2025</div>
+              <div class="timeline-role">AI Developer & Makerspace Mentor</div>
+              <div class="timeline-org">Computer Vision · IoT · Community Builder</div>
+            </div>
+            <div class="timeline-item reveal stagger-5">
+              <div class="timeline-year">2026 →</div>
+              <div class="timeline-role">Building the Future</div>
+              <div class="timeline-org">AI Products · Startups · Global Impact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     SKILLS SECTION
+═══════════════════════════════════════════ -->
+<section id="skills" class="section-padding" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="skills-header reveal">
+      <div class="section-label">Technical Arsenal</div>
+      <h2 class="section-title" id="skills-title">
+        Skills & <span class="gradient-text">Technologies</span>
+      </h2>
+      <p class="section-desc" style="margin:0 auto">
+        A curated toolkit built through real-world projects, hackathons, and relentless learning.
+      </p>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="skills-tabs" role="tablist">
+      <button class="skills-tab" data-panel="panel-frontend" role="tab" aria-selected="true" id="tab-frontend">Frontend</button>
+      <button class="skills-tab" data-panel="panel-backend"  role="tab" id="tab-backend">Backend</button>
+      <button class="skills-tab" data-panel="panel-database" role="tab" id="tab-database">Database</button>
+      <button class="skills-tab" data-panel="panel-ai"       role="tab" id="tab-ai">AI & Data</button>
+      <button class="skills-tab" data-panel="panel-tools"    role="tab" id="tab-tools">Tools</button>
+    </div>
+
+    <div class="skills-layout">
+      <!-- Skill Cards -->
+      <div>
+        <!-- Frontend -->
+        <div class="skills-panel skills-grid" id="panel-frontend" role="tabpanel" aria-labelledby="tab-frontend" style="opacity:0">
+          <div class="skill-card reveal stagger-1">
+            <span class="skill-icon">🌐</span>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="96%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <span class="skill-icon">🎨</span>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="92%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <span class="skill-icon">⚡</span>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <span class="skill-icon">⚛️</span>
+            <div class="skill-name">React</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <span class="skill-icon">▲</span>
+            <div class="skill-name">Next.js</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="78%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-6">
+            <span class="skill-icon">🎯</span>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="72%"></div></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-panel skills-grid" id="panel-backend" role="tabpanel" aria-labelledby="tab-backend" style="display:none;opacity:0">
+          <div class="skill-card reveal stagger-1">
+            <span class="skill-icon">🟢</span>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <span class="skill-icon">🚂</span>
+            <div class="skill-name">Express.js</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <span class="skill-icon">🔗</span>
+            <div class="skill-name">REST APIs</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <span class="skill-icon">🔐</span>
+            <div class="skill-name">JWT / Auth</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="82%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <span class="skill-icon">⚡</span>
+            <div class="skill-name">FastAPI</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-6">
+            <span class="skill-icon">🌐</span>
+            <div class="skill-name">WebSockets</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skills-panel skills-grid" id="panel-database" role="tabpanel" aria-labelledby="tab-database" style="display:none;opacity:0">
+          <div class="skill-card reveal stagger-1">
+            <span class="skill-icon">🍃</span>
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <span class="skill-icon">🐘</span>
+            <div class="skill-name">PostgreSQL</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <span class="skill-icon">⚡</span>
+            <div class="skill-name">Supabase</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="78%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <span class="skill-icon">🔴</span>
+            <div class="skill-name">Redis</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="65%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <span class="skill-icon">🔥</span>
+            <div class="skill-name">Firebase</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+          </div>
+        </div>
+
+        <!-- AI & Data -->
+        <div class="skills-panel skills-grid" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" style="display:none;opacity:0">
+          <div class="skill-card reveal stagger-1">
+            <span class="skill-icon">🐍</span>
+            <div class="skill-name">Python</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="92%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <span class="skill-icon">🧠</span>
+            <div class="skill-name">Machine Learning</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="82%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <span class="skill-icon">👁️</span>
+            <div class="skill-name">Computer Vision</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <span class="skill-icon">🎯</span>
+            <div class="skill-name">YOLO</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <span class="skill-icon">📸</span>
+            <div class="skill-name">OpenCV</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="86%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-6">
+            <span class="skill-icon">🔥</span>
+            <div class="skill-name">PyTorch</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="74%"></div></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-panel skills-grid" id="panel-tools" role="tabpanel" aria-labelledby="tab-tools" style="display:none;opacity:0">
+          <div class="skill-card reveal stagger-1">
+            <span class="skill-icon">🐙</span>
+            <div class="skill-name">Git & GitHub</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-2">
+            <span class="skill-icon">▲</span>
+            <div class="skill-name">Vercel</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-3">
+            <span class="skill-icon">🐳</span>
+            <div class="skill-name">Docker</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="72%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-4">
+            <span class="skill-icon">🎨</span>
+            <div class="skill-name">Figma</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-5">
+            <span class="skill-icon">☁️</span>
+            <div class="skill-name">AWS / Cloud</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="65%"></div></div>
+          </div>
+          <div class="skill-card reveal stagger-6">
+            <span class="skill-icon">🔧</span>
+            <div class="skill-name">Linux</div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="78%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Radar Chart -->
+      <div class="radar-wrap reveal from-right">
+        <div class="radar-title">Skill Overview</div>
+        <canvas id="radar-canvas" aria-label="Skills radar chart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS SECTION
+═══════════════════════════════════════════ -->
+<section id="projects" class="section-padding" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <div class="section-label reveal">Featured Work</div>
+        <h2 class="section-title reveal" id="projects-title">
+          Projects That<br>
+          <span class="gradient-text">Make an Impact</span>
+        </h2>
+      </div>
+      <p class="section-desc reveal from-right" style="max-width:320px">
+        From healthcare to AI — real products solving real problems.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 — Featured -->
+      <article class="project-card featured reveal" data-modal="aarogya" aria-label="Aarogya Darpan project">
+        <div class="project-img">
+          <img src="assets/images/project_aarogya.png" alt="Aarogya Darpan healthcare platform" loading="lazy">
+          <div class="project-img-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:0.6rem 1.25rem">View Case Study</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Healthcare</span>
+            <span class="project-tag">Full Stack</span>
+            <span class="project-tag">Startup</span>
+            <span class="project-tag">🏆 Top 50 / 751</span>
+          </div>
+          <h3 class="project-title">Aarogya Darpan</h3>
+          <p class="project-desc">
+            A centralized healthcare ecosystem connecting hospitals, patients, laboratories, and pharmacies
+            with secure digital medical records and paperless hospital management. Built to reduce
+            healthcare friction and improve patient outcomes.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>4+</strong> Stakeholders</div>
+            <div class="project-metric"><strong>100%</strong> Paperless</div>
+            <div class="project-metric"><strong>Top 50</strong> Hackathon</div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link demo" onclick="return false">🚀 Live Demo</a>
+            <a href="https://github.com" class="project-link github" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal stagger-2" data-modal="irrigation" aria-label="Smart Irrigation System project">
+        <div class="project-img">
+          <img src="assets/images/project_irrigation.png" alt="Smart Irrigation IoT dashboard" loading="lazy">
+          <div class="project-img-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:0.6rem 1.25rem">View Case Study</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Agriculture</span>
+            <span class="project-tag">Automation</span>
+          </div>
+          <h3 class="project-title">Smart Irrigation System</h3>
+          <p class="project-desc">
+            IoT-powered irrigation platform using sensors and automation to optimize agricultural
+            water usage by up to 40%, enabling remote monitoring and real-time control.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>40%</strong> Water Saved</div>
+            <div class="project-metric"><strong>24/7</strong> Automated</div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link demo" onclick="return false">🌿 Demo</a>
+            <a href="https://github.com" class="project-link github" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal stagger-3" data-modal="ai" aria-label="AI Vision Intelligence project">
+        <div class="project-img">
+          <img src="assets/images/project_ai.png" alt="AI Vision Intelligence Platform" loading="lazy">
+          <div class="project-img-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:0.6rem 1.25rem">View Case Study</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">AI / ML</span>
+            <span class="project-tag">Computer Vision</span>
+            <span class="project-tag">YOLO</span>
+          </div>
+          <h3 class="project-title">AI Vision Intelligence</h3>
+          <p class="project-desc">
+            Real-time object detection and classification platform built with YOLOv8 and OpenCV.
+            Designed for security, retail analytics, and industrial quality control applications.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>98.2%</strong> Accuracy</div>
+            <div class="project-metric"><strong>60fps</strong> Real-time</div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link demo" onclick="return false">🤖 Demo</a>
+            <a href="https://github.com" class="project-link github" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 id="modal-title" style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:800;letter-spacing:-0.02em"></h3>
+      <button class="modal-close" aria-label="Close modal">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     EXPERIENCE & ACHIEVEMENTS
+═══════════════════════════════════════════ -->
+<section id="experience" class="section-padding" aria-labelledby="experience-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
+      <div class="section-label">My Track Record</div>
+      <h2 class="section-title" id="experience-title">
+        Experience &<br>
+        <span class="gradient-text">Achievements</span>
+      </h2>
+    </div>
+
+    <div class="exp-grid">
+      <!-- Timeline -->
+      <div>
+        <h3 class="achievements-title reveal">Journey Timeline</h3>
+        <div class="exp-timeline">
+          <div class="exp-item reveal stagger-1">
+            <div class="exp-year">2024 — Present</div>
+            <div class="exp-title">Startup Founder & Lead Developer</div>
+            <div class="exp-org">Aarogya Darpan Healthcare Tech</div>
+            <div class="exp-desc">Building a full-stack healthcare ecosystem from scratch. Leading a team of 4, handling architecture, frontend, backend, and pitch decks.</div>
+          </div>
+          <div class="exp-item reveal stagger-2">
+            <div class="exp-year">2024</div>
+            <div class="exp-title">Hackathon Competitor</div>
+            <div class="exp-org">National Innovation Challenge</div>
+            <div class="exp-desc">Ranked Top 50 out of 751 competing teams with Aarogya Darpan. Competed in 8+ hackathons across domains of AI, healthcare, and sustainability.</div>
+          </div>
+          <div class="exp-item reveal stagger-3">
+            <div class="exp-year">2023 — Present</div>
+            <div class="exp-title">AI & Computer Vision Developer</div>
+            <div class="exp-org">Independent Projects</div>
+            <div class="exp-desc">Developed real-time object detection systems using YOLOv8, OpenCV, and PyTorch. Applied to security, retail, and agriculture domains.</div>
+          </div>
+          <div class="exp-item reveal stagger-4">
+            <div class="exp-year">2023 — Present</div>
+            <div class="exp-title">Makerspace Mentor & Community Lead</div>
+            <div class="exp-org">College Makerspace / Innovation Lab</div>
+            <div class="exp-desc">Mentoring junior students in hardware prototyping, IoT, and AI. Organized workshops on Python, React, and machine learning fundamentals.</div>
+          </div>
+          <div class="exp-item reveal stagger-5">
+            <div class="exp-year">2023</div>
+            <div class="exp-title">IoT Developer</div>
+            <div class="exp-org">Smart Agriculture Project</div>
+            <div class="exp-desc">Designed and built a smart irrigation system integrating Arduino, soil moisture sensors, and a real-time monitoring dashboard.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div>
+        <h3 class="achievements-title reveal">Key Achievements</h3>
+        <div class="achievement-card reveal stagger-1">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-body">
+            <div class="achievement-title">Top 50 Among 751 Teams</div>
+            <div class="achievement-desc">Aarogya Darpan recognized at National Innovation Hackathon</div>
+            <div class="achievement-badge">🥇 Gold Achievement</div>
+          </div>
+        </div>
+        <div class="achievement-card reveal stagger-2">
+          <div class="achievement-icon">🚀</div>
+          <div class="achievement-body">
+            <div class="achievement-title">Startup Founder at 20</div>
+            <div class="achievement-desc">Launched healthcare tech startup while still in college</div>
+            <div class="achievement-badge">💡 Entrepreneurship</div>
+          </div>
+        </div>
+        <div class="achievement-card reveal stagger-3">
+          <div class="achievement-icon">🤖</div>
+          <div class="achievement-body">
+            <div class="achievement-title">AI Developer — Production Grade</div>
+            <div class="achievement-desc">Built computer vision systems with 98%+ accuracy</div>
+            <div class="achievement-badge">⚡ Technical Excellence</div>
+          </div>
+        </div>
+        <div class="achievement-card reveal stagger-4">
+          <div class="achievement-icon">👥</div>
+          <div class="achievement-body">
+            <div class="achievement-title">Community Impact</div>
+            <div class="achievement-desc">Mentored 50+ students in AI, IoT & web development</div>
+            <div class="achievement-badge">🌟 Leadership</div>
+          </div>
+        </div>
+        <div class="achievement-card reveal stagger-5">
+          <div class="achievement-icon">🌱</div>
+          <div class="achievement-body">
+            <div class="achievement-title">Open Source Contributor</div>
+            <div class="achievement-desc">Active GitHub contributor with multiple public repositories</div>
+            <div class="achievement-badge">🐙 Open Source</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<section id="testimonials" class="section-padding" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
+      <div class="section-label">What People Say</div>
+      <h2 class="section-title" id="testimonials-title">
+        Voices of <span class="gradient-text">Trust</span>
+      </h2>
+    </div>
+
+    <div class="testimonials-track">
+      <div class="testimonial-card reveal stagger-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Bhavya's ability to architect complex systems while maintaining clean, readable code is remarkable.
+          His work on Aarogya Darpan showed exceptional product thinking and technical depth."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AK</div>
+          <div>
+            <div class="testimonial-name">Arjun Kumar</div>
+            <div class="testimonial-role">Hackathon Judge · Tech Entrepreneur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal stagger-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "One of the most passionate student developers I've mentored. Bhavya doesn't just write code —
+          he thinks about impact, scalability, and user experience simultaneously. A rare combination."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:linear-gradient(135deg,#8B5CF6,#EC4899)">PS</div>
+          <div>
+            <div class="testimonial-name">Prof. Sharma</div>
+            <div class="testimonial-role">Faculty Mentor · Computer Science Dept.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal stagger-3">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Bhavya brought our vision for a smart irrigation system to life in just 3 weeks.
+          His problem-solving and technical execution were beyond what I expected from someone his age."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">RM</div>
+          <div>
+            <div class="testimonial-name">Rahul Mehta</div>
+            <div class="testimonial-role">Project Collaborator · AgriTech Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     TECH ECOSYSTEM
+═══════════════════════════════════════════ -->
+<section id="tech-stack" class="section-padding" aria-labelledby="tech-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:2rem" class="reveal">
+      <div class="section-label">Technology Universe</div>
+      <h2 class="section-title" id="tech-title">
+        The <span class="gradient-text">Ecosystem</span> I Build In
+      </h2>
+    </div>
+
+    <div class="tech-ecosystem reveal">
+      <div class="tech-center-hub" title="Core Stack">⚡</div>
+
+      <!-- Orbit 1 (inner) -->
+      <div class="tech-orbit tech-orbit-1">
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 100px), -50%)">
+          <span>⚛️</span>
+          <div class="tech-tooltip">React</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -100px), -50%)">
+          <span>🟢</span>
+          <div class="tech-tooltip">Node.js</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + -100px))">
+          <span>🐍</span>
+          <div class="tech-tooltip">Python</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + 100px))">
+          <span>🍃</span>
+          <div class="tech-tooltip">MongoDB</div>
+        </div>
+      </div>
+
+      <!-- Orbit 2 (middle) -->
+      <div class="tech-orbit tech-orbit-2">
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 170px), -50%)">
+          <span>▲</span>
+          <div class="tech-tooltip">Next.js</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 120px), calc(-50% + -120px))">
+          <span>🎯</span>
+          <div class="tech-tooltip">YOLO</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + -170px))">
+          <span>👁️</span>
+          <div class="tech-tooltip">OpenCV</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -120px), calc(-50% + -120px))">
+          <span>🐘</span>
+          <div class="tech-tooltip">PostgreSQL</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -170px), -50%)">
+          <span>🐳</span>
+          <div class="tech-tooltip">Docker</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -120px), calc(-50% + 120px))">
+          <span>🐙</span>
+          <div class="tech-tooltip">GitHub</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + 170px))">
+          <span>⚡</span>
+          <div class="tech-tooltip">Supabase</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 120px), calc(-50% + 120px))">
+          <span>🔥</span>
+          <div class="tech-tooltip">PyTorch</div>
+        </div>
+      </div>
+
+      <!-- Orbit 3 (outer) -->
+      <div class="tech-orbit tech-orbit-3">
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 240px), -50%)">
+          <span>🎨</span>
+          <div class="tech-tooltip">Figma</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + -240px))">
+          <span>🔴</span>
+          <div class="tech-tooltip">Redis</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -240px), -50%)">
+          <span>☁️</span>
+          <div class="tech-tooltip">AWS</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(-50%, calc(-50% + 240px))">
+          <span>🔧</span>
+          <div class="tech-tooltip">Linux</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 170px), calc(-50% + -170px))">
+          <span>🌐</span>
+          <div class="tech-tooltip">REST API</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -170px), calc(-50% + -170px))">
+          <span>🔐</span>
+          <div class="tech-tooltip">JWT</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + -170px), calc(-50% + 170px))">
+          <span>📱</span>
+          <div class="tech-tooltip">React Native</div>
+        </div>
+        <div class="tech-icon-node" style="transform:translate(calc(-50% + 170px), calc(-50% + 170px))">
+          <span>🚂</span>
+          <div class="tech-tooltip">Express.js</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     BLOG / INSIGHTS
+═══════════════════════════════════════════ -->
+<section id="blog" class="section-padding" aria-labelledby="blog-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
+      <div class="section-label">Thoughts & Insights</div>
+      <h2 class="section-title" id="blog-title">
+        From the <span class="gradient-text">Lab</span>
+      </h2>
+      <p class="section-desc" style="margin:1rem auto 0">Ideas, learnings, and perspectives on AI, startups, and the future of tech.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card reveal stagger-1">
+        <div class="blog-img" style="background:linear-gradient(135deg,#0f0f2e,#1a1a4e)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">🧠</div>
+          <div class="blog-category">Artificial Intelligence</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Jun 2026</span>
+            <span>·</span>
+            <span>6 min read</span>
+          </div>
+          <h3 class="blog-title">How YOLO Changed Real-Time Object Detection Forever</h3>
+          <p class="blog-excerpt">A deep dive into the evolution of YOLO from v1 to v8, and why it remains the gold standard for real-time CV applications.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal stagger-2">
+        <div class="blog-img" style="background:linear-gradient(135deg,#0f1f0f,#1a3a1a)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">🚀</div>
+          <div class="blog-category">Startups</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>May 2026</span>
+            <span>·</span>
+            <span>8 min read</span>
+          </div>
+          <h3 class="blog-title">Building a Healthcare Startup as a College Student</h3>
+          <p class="blog-excerpt">The honest truth about founding Aarogya Darpan — the failures, pivots, hackathon wins, and lessons learned along the way.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal stagger-3">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1a0f2e,#2e1a4e)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">⚡</div>
+          <div class="blog-category">Software Engineering</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Apr 2026</span>
+            <span>·</span>
+            <span>5 min read</span>
+          </div>
+          <h3 class="blog-title">Why I Chose Next.js for My Production Apps</h3>
+          <p class="blog-excerpt">Server components, ISR, and the developer experience — why Next.js 14 became my go-to for every serious full-stack project.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal stagger-4">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1a1000,#3a2800)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">🌱</div>
+          <div class="blog-category">Innovation</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Mar 2026</span>
+            <span>·</span>
+            <span>7 min read</span>
+          </div>
+          <h3 class="blog-title">IoT + AI: The Future of Smart Agriculture</h3>
+          <p class="blog-excerpt">How combining sensor data with machine learning models can predict irrigation needs before crops show stress signals.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal stagger-5">
+        <div class="blog-img" style="background:linear-gradient(135deg,#0f1a2e,#1a2e4e)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">🎯</div>
+          <div class="blog-category">Product Development</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Feb 2026</span>
+            <span>·</span>
+            <span>9 min read</span>
+          </div>
+          <h3 class="blog-title">From Zero to MVP in 72 Hours: Hackathon Playbook</h3>
+          <p class="blog-excerpt">My proven framework for ideating, building, and pitching a minimum viable product within a hackathon's tight constraints.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+
+      <article class="blog-card reveal stagger-6">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1a0f0f,#3a1f1f)">
+          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem">🔮</div>
+          <div class="blog-category">Future of Tech</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span>Jan 2026</span>
+            <span>·</span>
+            <span>6 min read</span>
+          </div>
+          <h3 class="blog-title">The Convergence of AI, IoT, and Healthcare</h3>
+          <p class="blog-excerpt">Why the next decade belongs to builders who can sit at the intersection of biological data, AI inference, and connected devices.</p>
+          <div class="blog-read-more">Read More →</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════════ -->
+<section id="contact" class="section-padding" aria-labelledby="contact-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem" class="reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title" id="contact-title">
+        Let's Build Something<br>
+        <span class="gradient-text">Remarkable</span>
+      </h2>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Info Side -->
+      <div class="contact-info reveal from-left">
+        <p>
+          Whether you're looking for a co-founder, need an AI developer for your product,
+          want to collaborate on a hackathon, or just want to talk tech — my inbox is always open.
+          I typically respond within 24 hours.
+        </p>
+
+        <div class="availability-card">
+          <div class="availability-dot" aria-hidden="true"></div>
+          <div class="availability-text">
+            <strong>Currently Available</strong> — Open to full-time roles, freelance projects, and startup collaborations.
+          </div>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:bhavya@example.com" class="contact-link-item" id="contact-email">
+            <div class="contact-link-icon" style="background:rgba(59,130,246,0.1)">📧</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">bhavya@example.com</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#6B7280"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link-item" id="contact-linkedin">
+            <div class="contact-link-icon" style="background:rgba(10,102,194,0.1)">💼</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/bhavya</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#6B7280"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link-item" id="contact-github">
+            <div class="contact-link-icon" style="background:rgba(255,255,255,0.05)">🐙</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">github.com/bhavya</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#6B7280"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="contact-link-item" id="contact-twitter">
+            <div class="contact-link-icon" style="background:rgba(29,161,242,0.1)">🐦</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Twitter / X</div>
+              <div class="contact-link-value">@bhavya_dev</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#6B7280"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <!-- Response time badge -->
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.25rem;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:999px;font-size:var(--text-sm);color:#a78bfa;font-weight:600">
+          ⚡ Usually responds within 24 hours
+        </div>
+      </div>
+
+      <!-- Form Side -->
+      <div class="reveal from-right">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-subject">Subject</label>
+            <input type="text" id="form-subject" name="subject" class="form-input" placeholder="What's this about?" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-message">Message</label>
+            <textarea id="form-message" name="message" class="form-textarea" placeholder="Tell me about your project, opportunity, or just say hi..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="btn-submit">
+            Send Message ✦
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">Bhavya.</div>
+    <p class="footer-copy">
+      © 2026 Bhavya — Crafted with ❤️ & relentless curiosity<br>
+      <span style="font-size:0.75rem;color:#4B5563">Building intelligent digital experiences that shape the future.</span>
+    </p>
+    <div class="footer-social">
+      <a href="https://github.com" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="mailto:bhavya@example.com" class="social-icon" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/radar.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
